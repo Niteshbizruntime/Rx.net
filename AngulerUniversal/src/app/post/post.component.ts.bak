@@ -1,0 +1,7 @@
+ private isServer: boolean;
+    constructor(
+        private tstate: TransferState,
+        @Inject(PLATFORM_ID) platformId
+    ) {
+        this.isServer = isPlatformServer(platformId);
+    }
